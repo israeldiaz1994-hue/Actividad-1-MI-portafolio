@@ -1,0 +1,198 @@
+/* Variables CSS */
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #319795;
+    --bg-light: #f7fafc;
+    --text-color: #2d3748;
+    --white: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+/* Encabezado y Navegación Flexbox */
+.header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-info h1 {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Efecto :hover en menú */
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Secciones generales */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Sección Hero / Principal Flexbox */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 2;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 180px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+}
+
+/* Habilidades */
+.skills-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Proyectos */
+.projects-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 280px;
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto :hover en imágenes de proyectos */
+.project-card img:hover {
+    transform: scale(1.03);
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto :hover en botón */
+.btn-submit:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 0.9rem;
+}
